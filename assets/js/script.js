@@ -46,7 +46,9 @@ const displayAverageSalary = function(employeesArray) {
     total += employee.salary;
   }
   const average = total / employeeData.length;
-  console.log(`The average employee salary between our ${employeeData.length} employee(s) is $${average}`);
+  averageRounded =  Math.round(average*100)/100;
+  // Rounded average for cleaner reading in console
+  console.log(`The average employee salary between our ${employeeData.length} employee(s) is $${averageRounded}`);
 
 }
 
